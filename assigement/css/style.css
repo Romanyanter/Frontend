@@ -1,0 +1,788 @@
+html {
+  --color-blue: #7bccff;
+  --color-whit: #ffffff;
+  --color-wite: #ffffff;
+  --color-whyit: #f5f5f5;
+  --color-Black: #000;
+  --color-grey: #707070;
+  --color-blue2: #0078ff;
+  --color-blue3: #cde1f8;
+  scroll-behavior: smooth;
+  
+
+}
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* 
+=======================
+css for page 1
+=======================
+*/
+section{
+  padding: 40px;
+}
+header {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-nav li a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dropdown-item {
+  transition: 0.5s all;
+}
+.dropdown-item:hover {
+  color: var(--color-blue);
+  background-color: none;
+}
+.navbar-collapse li {
+  margin-right: 1rem;
+  position: relative;
+}
+.navbar-collapse li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-whit);
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  transition: width 0.5s;
+}
+.navbar-collapse li:hover:after {
+  width: 100%;
+}
+.navbar-collapse li:active {
+  width: 100%;
+}
+.textris {
+  margin-top: 18rem;
+  color: var(--color-whit);
+}
+.textris h2 {
+  font-size: 4rem;
+}
+.shadow-text {
+  position: relative;
+}
+.shadow-ros {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+.textris h3 {
+  font-size: 3rem;
+}
+.textris h3::after {
+  content: "|";
+  animation-name: typing;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "D|";
+  }
+  1% {
+    content: "De|";
+  }
+  2% {
+    content: "Dev|";
+  }
+  3% {
+    content: "Deve|";
+  }
+  4% {
+    content: "Devel|";
+  }
+  5% {
+    content: "Develo|";
+  }
+  6% {
+    content: "Develop|";
+  }
+  7% {
+    content: "Develope|";
+  }
+  8% {
+    content: "Developer|";
+  }
+  9% {
+    content: "Developer|";
+  }
+  10% {
+    content: "Developer|";
+  }
+  11% {
+    content: "Develope|";
+  }
+  12% {
+    content: "Develop|";
+  }
+  13% {
+    content: "Develo|";
+  }
+  14% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Deve|";
+  }
+  16% {
+    content: "Dev|";
+  }
+  17% {
+    content: "De|";
+  }
+  18% {
+    content: "D|";
+  }
+  19% {
+    content: "D|";
+  }
+  20% {
+    content: "De|";
+  }
+  21% {
+    content: "Des|";
+  }
+  22% {
+    content: "Desi|";
+  }
+  23% {
+    content: "Desig|";
+  }
+  24% {
+    content: "Design|";
+  }
+  25% {
+    content: "Designe|";
+  }
+  26% {
+    content: "Designer|";
+  }
+  27% {
+    content: "Designer|";
+  }
+  28% {
+    content: "Designer|";
+  }
+  29% {
+    content: "Designe|";
+  }
+  30% {
+    content: "Design|";
+  }
+  31% {
+    content: "Desig|";
+  }
+  32% {
+    content: "Desi|";
+  }
+  33% {
+    content: "Des|";
+  }
+  34% {
+    content: "De|";
+  }
+  35% {
+    content: "D|";
+  }
+  36% {
+    content: "F|";
+  }
+  37% {
+    content: "Fr|";
+  }
+  38% {
+    content: "Fre|";
+  }
+  39% {
+    content: "Free|";
+  }
+  40% {
+    content: "Freel|";
+  }
+  41% {
+    content: "Freela|";
+  }
+  42% {
+    content: "Freelan|";
+  }
+  43% {
+    content: "Freelans|";
+  }
+  44% {
+    content: "Freelansc|";
+  }
+  45% {
+    content: "Freelansce|";
+  }
+  46% {
+    content: "Freelanscer|";
+  }
+  47% {
+    content: "Freelanscer|";
+  }
+  48% {
+    content: "Freelanscer|";
+  }
+  49% {
+    content: "Freelansce|";
+  }
+  50% {
+    content: "Freelansc|";
+  }
+  51% {
+    content: "Freelans|";
+  }
+  52% {
+    content: "Freelan|";
+  }
+  53% {
+    content: "Freela|";
+  }
+  54% {
+    content: "Freel|";
+  }
+  55% {
+    content: "Free|";
+  }
+  56% {
+    content: "Fre|";
+  }
+  57% {
+    content: "Fr|";
+  }
+  58% {
+    content: "F|";
+  }
+  59% {
+    content: "P|";
+  }
+  60% {
+    content: "Ph|";
+  }
+  61% {
+    content: "Pho|";
+  }
+  62% {
+    content: "Phot|";
+  }
+  63% {
+    content: "Photo|";
+  }
+  64% {
+    content: "Photog|";
+  }
+  65% {
+    content: "Photogr|";
+  }
+  66% {
+    content: "Photogra|";
+  }
+  67% {
+    content: "Photograp|";
+  }
+  68% {
+    content: "Photograph|";
+  }
+  69% {
+    content: "Photographe|";
+  }
+  70% {
+    content: "Photographer|";
+  }
+  71% {
+    content: "Photographer|";
+  }
+  72% {
+    content: "Photographer|";
+  }
+  73% {
+    content: "Photographe|";
+  }
+  74% {
+    content: "Photograph|";
+  }
+  75% {
+    content: "Photograp|";
+  }
+  76% {
+    content: "Photogra|";
+  }
+  77% {
+    content: "Photogr|";
+  }
+  78% {
+    content: "Photog|";
+  }
+  79% {
+    content: "Photo|";
+  }
+  80% {
+    content: "Phot|";
+  }
+  81% {
+    content: "Pho|";
+  }
+  82% {
+    content: "Ph|";
+  }
+  83% {
+    content: "P|";
+  }
+  85% {
+    content: "|";
+  }
+  90% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+/* 
+=======================
+css for page 2
+=======================
+*/
+#page2 {
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.info span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info label {
+  padding: 1.2rem 0 0 0;
+}
+
+.img-proile img {
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.info {
+  width: 60%;
+}
+.skil {
+  margin-top: 1.5rem;
+}
+
+.skils {
+  margin-top: 2rem;
+}
+
+.percentage {
+  width: 100%;
+  height: 12px;
+  background-color: #cde1f8;
+  margin-top: 10px;
+}
+
+#html,
+#CSS3,
+#PHP,
+#JAVASCRIPT {
+  height: 12px;
+  background-color: #0078ff;
+}
+
+#html {
+  width: 85%;
+}
+
+#CSS3 {
+  width: 75%;
+}
+
+#PHP {
+  width: 50%;
+}
+
+#JAVASCRIPT {
+  width: 90%;
+}
+
+.about-me h2 {
+  position: relative;
+}
+
+.about-me h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.about-me p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: var(--color-grey);
+}
+
+.caption-page2 {
+  width: 100%;
+  padding: 50px 50px 70px 50px;
+  margin-top: 60px;
+  box-shadow: 0 0 1px black;
+  background-color: white;
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+/* 
+=======================
+css for page 3
+=======================
+*/
+.page3 {
+  background-color: var(--color-whyit);
+  overflow: hidden;
+}
+.text-io {
+  line-height: 0.5rem;
+  text-align: center;
+}
+.text-io h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.text-io h5 {
+  color: var(--color-grey);
+  position: relative;
+}
+.text-io h5::after {
+  content: "";
+  width: 2.2rem;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 2.2rem;
+  left: 48%;
+}
+.service {
+  background-color: var(--color-whit);
+  border-radius: 10px;
+}
+.service i {
+  font-size: 4rem;
+  padding: 20px;
+  border-radius: 50%;
+  border: 10px solid var(--color-blue2);
+  transition: 0.5s all;
+}
+.service:hover i {
+  background-color: var(--color-blue2);
+  border: 10px solid var(--color-blue3);
+}
+/* 
+=======================
+css for page 4
+=======================
+*/
+.card-page5 {
+  height:60vh;
+  background-size: 100% 100%;
+  background: url(../images/post-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.loyer {
+  background-color: rgba(5, 89, 185, 0.7);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.degree i{
+  font-size: 1.5rem;
+  border: 10px solid var(--color-whyit);
+  padding: 20px;
+}
+/* 
+=======================
+css for page 5
+=======================
+*/
+#PORTFOLIO{
+  background-color: var(--color-whyit);
+  overflow: auto;
+
+}
+.port-caption-icon i{
+  padding: 10px 10px 10px 10px;
+  border: 3px solid var(--color-blue2);
+  border-radius: 50%;
+  color: var(--color-blue2);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.text-portfolio{
+  background-color: var(--color-whit);
+}
+.photo-portfolio{
+  overflow: hidden;
+  
+}
+.photo-portfolio img{
+  transition: 0.7s  all;
+}
+.photo-portfolio img:hover{
+  transform: scale(1.3);
+}
+label{
+  color: var(--color-blue2);
+}
+/* 
+=======================
+css for page 6
+=======================
+*/
+#carousl{
+  width: 100%;
+  background-color: var(--color-whyit);
+  overflow: hidden;
+
+}
+.carousel{
+  height: 70vh;
+  background: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.loyer{
+  background-color: rgba(24,107,215, 0.7);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item p{
+  font-size: 18px;
+  line-height: 30px;
+}
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  bottom: 110px;
+}
+.carousel-item img{
+  border-radius: 50%;
+  margin-left: 45%;
+  margin-bottom: 10%;
+}
+/* 
+=======================
+css for page 7
+=======================
+*/
+#Blog{
+
+  background-color: var(--color-whyit);
+}
+.card-title{
+  cursor: pointer;
+  transition: 0.5s 0.3s all;
+
+}
+.card-title:hover{
+  color: var(--color-blue2);
+}
+.photo-card3-page7 img{
+  width: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card-text-ros{
+  background-color: var(--color-blue2);
+  position: absolute;
+  top: -20px;
+  left: 40%;
+  
+}
+.pragraph-page7 h6{
+  transition: 0.5s 0.3s all;
+  cursor: pointer;
+}
+.pragraph-page7 h6:hover{
+  color: var(--color-blue2);
+  
+}
+/* 
+=======================
+css for page 8
+=======================
+*/
+#CONECT{
+  width: 100%;
+  background: url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  overflow: auto;
+}
+
+.caption-page8{
+  width: 100%;
+  padding: 130px 0 0 0;
+  background-color: rgba(0, 103, 221, 0.7);
+  box-shadow: 5px 5px 5px 10px;
+}
+.caption-form p{
+  color: var(--color-grey);
+}
+.caption-form i span{
+  color: var(--color-grey);
+}
+
+form h2 , .caption-form h2{
+  position: relative;
+}
+
+
+form h2::after{
+  content: '';
+  width:100px;
+  height: 3px;
+  background-color: var(--color-blue2);
+  position: absolute;
+  top: 45px;
+  left: 0;  
+}
+
+.space{
+  margin-top: 40px;
+}
+
+form textarea{
+  height: 130px;
+}
+
+
+form input::placeholder{
+  font-size: 1rem;
+}
+form input{
+  border: none;
+}
+form input:focus{
+  border: 5px solid var(--color-blue);
+}
+
+form textarea::placeholder{
+  font-size: 1rem;
+}
+
+form .btnn button{
+  font-size: 1.5rem;
+  color:var(--color-whit);
+  border-radius: 30px;
+  background-color:var(--color-blue2);
+  transition: 0.3s all;
+  border: none;
+  margin-top: 20px;
+}
+
+form .btnn button:hover{
+  background-color: var(--color-blue);
+}
+
+
+.btnn{
+  text-align: center;
+}
+
+.btnn button a{
+  text-decoration: none;
+  color: white;
+}
+
+.caption-form h2::after{
+  content: '';
+  width:100px;
+  height: 3px;
+  background-color: var(--color-blue2);
+  position: absolute;
+  top: 45px;
+  left: 0; 
+}
+
+.caption-form p{
+  font-size: 20px;
+  margin-top: 45px;
+}
+
+.icons i{
+  color: var(--color-blue2);
+}
+
+.icons span{
+  margin-left: 15px;
+}
+
+.media i{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 8px;
+  border: 3px solid var(--color-blue2);
+  transition: 0.4s;
+}
+
+.media i:hover{
+  color: white;
+  background-color:var(--color-blue2);
+  border: 3px solid var(--color-blue3);
+}
+
+footer{
+  background-color: rgba(0, 103, 221, 0.7);
+}
+
+
+
